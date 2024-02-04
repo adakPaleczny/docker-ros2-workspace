@@ -19,7 +19,7 @@ docker compose up --build
 ```
 
 ### Editing code in Visual Studio Code:
-It is possible to open code from Docker inside vs code. You should add [Remote Development](https://code.visualstudio.com/docs/remote/remote-overview). After running docker compose you can open files using *Command Palette* and run *Remote-Containers: **Attach to Running Container...** and choose *ros2-constainer*. 
+It is possible to open code from Docker inside vs code. You should add [Remote Development](https://code.visualstudio.com/docs/remote/remote-overview). After running docker compose you can open files using *Command Palette* and run *Remote-Containers*: **Attach to Running Container...** and choose *ros2-constainer*. 
 
 ## Possible issue:
 To run Rviz and all visual applications it may be required to execute this command:

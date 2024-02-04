@@ -1,0 +1,20 @@
+version: '3'
+services:
+  ros2:
+    build: .
+    container_name: ros2_container
+    working_dir: /home/dv_ws
+    privileged: true
+    stdin_open: true
+    tty: true
+    networks:
+      - ros_network
+    volumes:
+      - ./ros_ws:/home/ros_ws
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      - DISPLAY=$DISPLAY
+
+networks:
+  ros_network:
+    driver: bridge
